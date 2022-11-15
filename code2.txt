@@ -1,0 +1,22 @@
+class box{
+double principle, time, rate;
+void setvalues(double p, double t, double r)
+{
+principle=p;
+time=t;
+rate=r;
+}
+double si()
+{
+return principle*rate*time/100;
+}
+}
+
+class boxdemo{
+public static void main(String args[])
+{
+box mybox1=new box();
+mybox1.setvalues(10.0,20.0,30.0);
+System.out.println("simple interest is"+" "+mybox1.si());
+}
+}
